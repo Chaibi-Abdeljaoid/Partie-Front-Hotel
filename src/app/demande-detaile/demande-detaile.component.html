@@ -1,0 +1,22 @@
+<h2>Demande Detaills</h2> 
+
+<hr/>
+<div *ngIf="demande">
+  <div>
+    <label><b>Nubpersonne: </b></label> {{demande.nubpersonne}}
+  </div>
+  <div>
+    <label><b>Date: </b></label> {{demande.date}}
+  </div>
+  <div>
+    <label><b>Delai: </b></label> {{demande.delai}}
+  </div>
+  <div>
+    <label><b>Prix: </b></label> {{demande.prix}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Demande List</button><br>
+

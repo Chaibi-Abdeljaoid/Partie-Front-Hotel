@@ -1,0 +1,35 @@
+<h3>Update Hotel</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Nom</label>
+      <input type="text" class="form-control" id="nom" required [(ngModel)]="hotel.nom" name="nom">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Adresse</label>
+      <input type="text" class="form-control" id="adresse" required [(ngModel)]="hotel.adresse" name="adresse">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ville</label>
+      <input type="text" class="form-control" id="ville" required [(ngModel)]="hotel.ville" name="ville">
+    </div>
+
+
+    <div class="form-group">
+        <label for="name">Numbetoile</label>
+        <input type="text" class="form-control" id="numbetoile" required [(ngModel)]="hotel.numbetoile" name="numbetoile">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Tel</label>
+        <input type="text" class="form-control" id="tel" required [(ngModel)]="hotel.tel" name="tel">
+      </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div> 
+
+
+
+

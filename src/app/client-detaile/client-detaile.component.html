@@ -1,0 +1,24 @@
+<h2>Client-Detaile </h2>
+<hr/>
+<div *ngIf="client">
+  <div>
+    <label><b>Nom: </b></label> {{client.nom}}
+  </div>
+  <div>
+    <label><b>Prenom: </b></label> {{client.prenom}}
+  </div>
+  <div>
+    <label><b>Age: </b></label> {{client.age}}
+  </div> 
+  <div>
+    <label><b>Cin: </b></label> {{client.cin}}
+  </div>
+  <div>
+    <label><b>Tel: </b></label> {{client.tel}}
+  </div> 
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Client List</button><br>
+

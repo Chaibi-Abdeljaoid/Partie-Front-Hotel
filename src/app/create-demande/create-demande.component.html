@@ -1,0 +1,33 @@
+<h3>Create Demande</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nubpersonne</label>
+      <input type="text" class="form-control" id="nubpersonne" required [(ngModel)]="demande.nubpersonne" name="nubpersonne">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Date</label>
+      <input type="text" class="form-control" id="date" required [(ngModel)]="demande.date" name="date">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Delai</label>
+      <input type="text" class="form-control" id="delai" required [(ngModel)]="demande.delai" name="delai">
+    </div>
+
+
+    <div class="form-group">
+        <label for="name">Prix</label>
+        <input type="text" class="form-control" id="prix" required [(ngModel)]="demande.prix" name="prix">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newDemande()">Add</button> -->
+</div>
+
